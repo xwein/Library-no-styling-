@@ -1,0 +1,166 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: 'Merriweather', serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+.navbar{
+    height: 80px;
+    background-color: #8C3503;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px double black;
+}
+
+.add-book{
+    width: 100%;
+    height: 80px;
+    background-color: #A66A21;
+    display: flex;
+    justify-content: center;
+}
+
+.add-book button{
+    height: 40px;
+    align-self: center;
+    
+}
+
+.book-form{
+    display: none;
+    padding-top: 15px;
+    height: 350px;
+    width: 350px;
+    background-color: beige;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+i{
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.read-validation{
+    display: flex;
+    gap: 10px;
+}
+
+#grid-container{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+  }
+
+main{
+    min-height: 90vh;
+    background-color: #8D9EC6;
+}
+
+.book-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.button-style{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+
+

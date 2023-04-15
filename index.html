@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>MyLibrary</h1>
+        <button>Log in</button>
+    </div>
+    <div class="add-book">
+        <button id="add-book-btn" onclick="openForm()">
+            Add New Book
+        </button>
+    </div>
+    <main>
+        <div id="grid-container">
+
+        </div>
+
+    </main>
+    <div id="book-form" class="book-form">
+        <form>
+            <h2>Add New Book</h2>
+            <i class="fa-solid fa-square-xmark" onclick="closeForm()"></i>
+            <input type="text" placeholder="Title" id="title" name="title" required pattern="[a-zA-Z ]+"
+                title="Please enter letters only">
+            <input type="text" placeholder="Author" id="author" name="author" required pattern="[a-zA-Z ]+"
+                title="Please enter letters only">
+            <input type="text" placeholder="Pages" id="pages" name="pages" required pattern="[0-9]+"
+                title="Please enter numbers only">
+            <div class="read-validation">
+                <p>Did you read this book?</p>
+                <input type="checkbox" id="read" name="read">
+            </div>
+
+            <button id="add-new-book" type="submit">Add</button>
+        </form>
+    </div>
+
+
+
+    <script src="myscript.js"></script>
+    <script src="https://kit.fontawesome.com/da2d8d690e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
